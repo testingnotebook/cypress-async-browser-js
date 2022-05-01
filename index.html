@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Testingnotebook</title>
+  </head>
+  <body>
+    <h1 data-cy="heading">Invoke testSupport() in the JS console.</h1>
+  </body>
+  <script type="text/javascript">
+    function asyncFunction() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve("Function has now returned a value");
+        }, 2000);
+      });
+    }
+    async function testSupport() {
+      return await asyncFunction();
+    }
+  </script>
+</html>
